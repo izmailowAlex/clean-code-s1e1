@@ -94,7 +94,8 @@
 }
 
 /* Task list */
-.toDo__list_item {
+.toDo__list_item,
+.completed__list_item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;

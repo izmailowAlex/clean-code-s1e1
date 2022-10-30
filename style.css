@@ -94,7 +94,7 @@
 }
 
 /* Task list */
-li {
+.toDo__list_item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -103,20 +103,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
+.toDo__list_item > * {
+  /* vertical-align: middle; */
 }
 
-li > input[type="checkbox"] {
+.input-checkbox {
   margin: 0 10px;
 }
-li > label {
+.toDo_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.input-text {
   width: 226px
 }
 button.delete img {

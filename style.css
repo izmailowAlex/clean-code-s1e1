@@ -31,7 +31,8 @@
 .add-item__wrapper {
     display: flex;
 }
-ul {
+.toDo__list,
+.completed__list {
   margin:0;
   padding: 0px;
 }

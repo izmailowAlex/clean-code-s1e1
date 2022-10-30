@@ -16,10 +16,12 @@
 .header__link {
   font-family: fantasy, cursive;
 }
-.add-item {
+.add-item,
+.toDo,
+.completed {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 .task {
   width: 56%;

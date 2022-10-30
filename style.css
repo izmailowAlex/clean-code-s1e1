@@ -129,22 +129,22 @@
 }
 
 /* Completed */
-ul#completed-tasks label {
+.completed_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.input-text {
   display:none
 }
 
-ul li.editMode input[type="text"] {
+.editMode-input {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+.editMode-label {
   display:none;
 }
 

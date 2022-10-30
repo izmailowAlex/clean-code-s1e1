@@ -12,14 +12,14 @@
     </header>
     <main class="main">
       <section class="add-item">
-        <label for="new-task">Add Item</label>
+        <h3 class="add-item__title"><label class="add-item__title_label" for="new-task">Add Item</label></h3>
         <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
+          <input id="new-task" class="new-task_input task" type="text">
           <button class="btn">Add</button>
         </div>
       </section>
       <section class="toDo">
-        <h3>Todo</h3>
+        <h3 class="toDo__title">Todo</h3>
         <ul class="toDo__list" id="in-complete-tasks">
           <li class="toDo__list_item">
             <input class="input-checkbox" type="checkbox"><label class="task">Pay Bills</label>
@@ -36,7 +36,7 @@
         </ul>
       </section>
       <section class="completed">
-        <h3>Completed</h3>
+        <h3 class="completed__title">Completed</h3>
         <ul class="completed__list" id="completed-tasks">
           <li class="completed__list_item">
             <input class="input-checkbox" type="checkbox" checked><label class="task">See the Doctor</label>

@@ -40,7 +40,7 @@
 .completed__list_item {
   list-style: none;
 }
-.input, .input-text, .btn{
+.new-task_input, .input-text, .btn{
   outline: none;
 }
 .btn {
@@ -57,8 +57,9 @@
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.add-item__title_label,
+.toDo__title,
+.completed__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +68,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,16 +80,16 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-item__title_label {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.new-task_input {
   width: 318px;
 }
 

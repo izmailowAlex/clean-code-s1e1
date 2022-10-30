@@ -102,6 +102,7 @@
   color: #888;
 }
 
+.new-task_input,
 .input-text:focus {
   color: #333;
 }

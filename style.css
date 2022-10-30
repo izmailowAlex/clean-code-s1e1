@@ -26,7 +26,6 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
 }
 .add-item__wrapper {
     display: flex;
@@ -42,6 +41,9 @@
 }
 .new-task_input, .input-text, .btn{
   outline: none;
+}
+.new-task_input {
+  flex-grow: 1;
 }
 .btn {
   background: none;
@@ -68,6 +70,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+.new-task_input,
 .input-text {
   margin: 0;
   font-size: 18px;

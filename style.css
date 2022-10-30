@@ -48,7 +48,9 @@
   list-style: none;
 }
 
-.new-task_input, .input-text, .btn{
+.new-task_input,
+.input-text,
+.btn{
   outline: none;
 }
 

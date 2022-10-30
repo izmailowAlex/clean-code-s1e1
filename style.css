@@ -165,12 +165,12 @@
   display: none;
 }
 
-.editMode-input {
+.editMode .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.editMode-label {
+.editMode .toDo_label {
   display: none;
 }
 

@@ -16,7 +16,7 @@
 .header__link {
   font-family: fantasy, cursive;
 }
-.centered-main-page-element {
+.add-item {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -26,7 +26,7 @@
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add-item__wrapper {
     display: flex;
 }
 ul {

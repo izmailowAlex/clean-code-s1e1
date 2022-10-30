@@ -166,12 +166,12 @@
   display: none;
 }
 
-.editMode .input-text {
+.edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .toDo_label {
+.edit-mode .toDo_label {
   display: none;
 }
 

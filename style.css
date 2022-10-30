@@ -119,12 +119,12 @@
 .input-text {
   width: 226px
 }
-button.delete img {
+.button-delete_img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button-delete_img:hover {
   transform: rotateZ(0);
 }
 

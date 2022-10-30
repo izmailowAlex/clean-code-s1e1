@@ -90,9 +90,10 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector('.input-text');
+    var label=listItem.querySelector(".toDo_label");
     var editBtn=listItem.querySelector(".edit");
+    console.log(editBtn);
     var containsClass=listItem.classList.contains("editMode");
     //If class of the parent is .editmode
     if(containsClass){

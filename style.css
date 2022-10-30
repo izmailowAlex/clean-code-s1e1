@@ -40,10 +40,10 @@
 .completed__list_item {
   list-style: none;
 }
-.input, .input-text, button{
+.input, .input-text, .btn{
   outline: none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -52,7 +52,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3A3a;
 }
 

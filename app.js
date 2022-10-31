@@ -26,6 +26,7 @@ var createNewTaskElement=function(taskString){
   var label=document.createElement("label");//label
   label.classList.add('toDo_label');
   label.classList.add('task');
+  label.classList.add('label');
   //input (text)
   var editInput=document.createElement("input");//text
   //button.edit
@@ -86,9 +87,8 @@ var editTask=function(){
   var listItem=this.parentNode;
 
   var editInput=listItem.querySelector('.input-text');
-  var label=listItem.querySelector(".toDo_label");
+  var label=listItem.querySelector(".task");
   var editBtn=listItem.querySelector(".edit");
-  console.log(editBtn);
   var containsClass=listItem.classList.contains("edit-mode");
   //If class of the parent is .editmode
   if(containsClass){
@@ -122,6 +122,12 @@ var taskCompleted=function(){
 
   //Append the task list item to the #completed-tasks
   var listItem=this.parentNode;
+  listItem.classList.add('completed__list_item');
+  listItem.classList.remove('toDo__list_item');
+  var label = listItem.querySelector('.task');
+  label.classList.add('completed_label');
+  label.classList.remove('toDo_label');
+//   console.log(label)
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 }
@@ -132,6 +138,11 @@ var taskIncomplete=function(){
   //When the checkbox is unchecked
   //Append the task list item to the #incompleteTasks.
   var listItem=this.parentNode;
+  listItem.classList.add('toDo__list_item');
+  listItem.classList.remove('completed__list_item');
+  var label = listItem.querySelector('.task');
+  label.classList.remove('completed_label');
+  label.classList.add('toDo_label');
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem,taskCompleted);
 }

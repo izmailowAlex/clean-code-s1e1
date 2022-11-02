@@ -24,7 +24,7 @@ var createNewTaskElement=function(taskString){
   checkBox.classList.add('input-checkbox');
   //label
   var label=document.createElement("label");//label
-  label.classList.add('toDo_label');
+  label.classList.add('toDo__label');
   label.classList.add('task');
   label.classList.add('label');
   //input (text)
@@ -50,7 +50,7 @@ var createNewTaskElement=function(taskString){
 
   deleteButton.className="btn";
   deleteButton.classList.add('delete');
-  deleteButtonImg.className="button-delete_img";
+  deleteButtonImg.className="button-delete__img";
   deleteButtonImg.src="./remove.svg";
   deleteButtonImg.alt="Vector";
   deleteButton.appendChild(deleteButtonImg);
@@ -125,8 +125,8 @@ var taskCompleted=function(){
   listItem.classList.add('completed__list_item');
   listItem.classList.remove('toDo__list_item');
   var label = listItem.querySelector('.task');
-  label.classList.add('completed_label');
-  label.classList.remove('toDo_label');
+  label.classList.add('completed__label');
+  label.classList.remove('toDo__label');
 //   console.log(label)
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
@@ -141,8 +141,8 @@ var taskIncomplete=function(){
   listItem.classList.add('toDo__list_item');
   listItem.classList.remove('completed__list_item');
   var label = listItem.querySelector('.task');
-  label.classList.remove('completed_label');
-  label.classList.add('toDo_label');
+  label.classList.remove('completed__label');
+  label.classList.add('toDo__label');
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem,taskCompleted);
 }
